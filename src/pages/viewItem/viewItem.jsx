@@ -5,5 +5,3 @@ export const ViewItem = () => {
     <div>ViewItem</div>
   )
 }
-
-export default ViewItem

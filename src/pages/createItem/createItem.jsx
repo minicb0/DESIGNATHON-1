@@ -5,5 +5,3 @@ export const CreateItem = () => {
     <div>CreateItem</div>
   )
 }
-
-export default CreateItem

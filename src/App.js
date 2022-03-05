@@ -3,12 +3,12 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Home from './pages/home'
-import Profile from './pages/profile'
-import ViewItem from './pages/viewItem'
-import CreateItem from './pages/createItem'
-import Navbar from './components/navbar'
-import Footer from './components/footer'
+import { Home } from './pages/home'
+import { Profile } from './pages/profile'
+import { ViewItem } from './pages/viewItem'
+import { CreateItem } from './pages/createItem'
+import { Navbar } from './components/navbar'
+import { Footer } from './components/footer'
 import './App.css';
 
 function App() {
