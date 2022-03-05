@@ -1,12 +1,17 @@
 import React from 'react'
 
-import { Card } from '../../components/card'
-
+import { HotBirds } from '../../components/hotBirds'
+import { TopSellers } from '../../components/sellers'
+import { useStyles } from './styles'
 export const Home = () => {
+  const classes = useStyles()
   return (
     <>
-      <div>Home</div>
-      <Card />
+      <div className={classes.home}>
+        <TopSellers />
+        <HotBirds />
+      </div>
+      
     </>
   )
 }

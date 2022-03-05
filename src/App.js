@@ -2,6 +2,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  Navigate
 } from "react-router-dom";
 import { Home } from './pages/home'
 import { Profile } from './pages/profile'
@@ -17,7 +18,8 @@ function App() {
       <BrowserRouter>
         <Navbar></Navbar>
         <Routes>
-          <Route path="/" element={<Home/>} exact></Route>
+          <Route path="/" element={<Navigate replace to="/home" />} />
+          <Route path="/home" element={<Home/>} exact></Route>
           <Route path="/profile" element={<Profile/>} exact></Route>
           <Route path="/item" element={<ViewItem/>} exact></Route>
           <Route path="/create" element={<CreateItem/>} exact></Route>
