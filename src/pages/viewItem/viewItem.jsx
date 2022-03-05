@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ViewItem() {
+export const ViewItem = () => {
   return (
     <div>ViewItem</div>
   )

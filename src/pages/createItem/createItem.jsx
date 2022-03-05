@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CreateItem() {
+export const CreateItem = () => {
   return (
     <div>CreateItem</div>
   )
