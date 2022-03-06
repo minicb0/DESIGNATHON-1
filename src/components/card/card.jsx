@@ -16,7 +16,7 @@ export const Card = (props) => {
             lg={3}
             className={classes.card}
         >
-            <img src={props.image} className={classes.img} />
+            <img src={props.image} alt="card"className={classes.img} />
             <div className={classes.heading}>{props.heading}</div>
             <div className={classes.eth}>
                 <span>
@@ -26,7 +26,7 @@ export const Card = (props) => {
                     {" ETH"}
                 </span>
                 <span className={classes.eth}>
-                    <img src="assets/heart.svg" />
+                    <img src="assets/heart.svg"alt="sfs" />
                     <span className={classes.likes}>
                         {props.likes}
                     </span>

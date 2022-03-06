@@ -2,7 +2,7 @@ import React from 'react'
 
 import { TextField, Select, MenuItem } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
-
+import imageLogo from "../../assets/images/Image.svg"
 import "./style.css"
 
 const useStyles = makeStyles({
@@ -36,7 +36,7 @@ export const CreateItem = () => {
                   JPG, PNG, GIF, SVG, WEBM, MP3, MP4. Max 100mb.
                 </p>
 
-                {/* Insert Image */}
+                <img src={imageLogo} alt="" />
 
                 <p>Drag and Drop File</p>
                 <p>or <strong>browse media on your device</strong></p>
