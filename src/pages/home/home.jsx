@@ -8,10 +8,15 @@ export const Home = () => {
   return (
     <>
       <div className={classes.home}>
-        <TopSellers />
-        <HotBirds />
+        <div className={classes.wrapper}>
+          <TopSellers />
+          <div className={classes.header}>
+            Hot Bids
+          </div>
+          <HotBirds />
+        </div>
       </div>
-      
+
     </>
   )
 }

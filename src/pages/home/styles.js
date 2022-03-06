@@ -20,5 +20,18 @@ export const useStyles = makeStyles({
         '@media screen and (max-width: 560px)': {
             margin: '0 5px'
         }
+    },
+    // wrapper: {
+    //     margin: '0 100px'
+    // },
+    header: {
+        fontSize: '28px',
+        lineHeight: '42px',
+        marginLeft: '80px',
+        fontFamily: 'Poppins, sans-serif',
+        fontWeight: 600,
+        color: 'white',
+        marginBottom: '15px',
+        width: '100%'
     }
 })

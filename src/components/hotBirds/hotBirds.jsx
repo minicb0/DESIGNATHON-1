@@ -12,9 +12,6 @@ export const HotBirds = () => {
                 container
                 className={classes.hotbird}
             >
-                <div className={classes.header}>
-                    Hot Bids
-                </div>
                 <Card
                     image={"assets/hotBirds/image_1.png"}
                     heading="Abstact Smoke Red Blue"

@@ -1,12 +1,36 @@
-import React from 'react'
+import { React, useState } from 'react'
 import { Avatar, Tabs, Tab, Box, Container } from '@material-ui/core'
 import creator from '../../assets/images/creatorProfile.svg'
 import styles from './style.module.css'
 import item from '../../assets/images/item.svg'
 import heartDark from '../../assets/Logos/heartDark.svg'
+import { Checkout } from '../../components/checkout/Checkout'
+import { Payment } from '../../components/payment/Payment'
+
 export const ViewItem = () => {
+  const [open, setOpen] = useState(false)
+  const [payment, setpayment] = useState(false)
+  const confirmDialog = (
+    <Checkout 
+      open={open}
+      setOpen={setOpen}
+      payment={payment}
+      setpayment={setpayment}
+    />
+  );
+  const paymentDialog = (
+    <Payment 
+      open={open}
+      setOpen={setOpen}
+      payment={payment}
+      setpayment={setpayment}
+    />
+  );
+
   return (
     <Container className={styles.itemContain}>
+      {paymentDialog}
+      {confirmDialog}
       <div className={styles.itemImgContainer}>
 <img src={item} alt="item"className={styles.itemImg} />
       </div>
@@ -51,7 +75,7 @@ export const ViewItem = () => {
           Item Three
                 </TabPanel> */}
         <div style={{display:'flex',justifyContent:'space-around'}}>
-<button class={styles.createBtn}>Buy for 4.5 ETH</button>
+<button class={styles.createBtn} onClick={() => {setOpen(true)}}>Buy for 4.5 ETH</button>
           <button class={styles.connectBtn}>Make Offer</button>
         </div>
         

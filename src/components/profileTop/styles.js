@@ -2,7 +2,6 @@ import { makeStyles } from '@material-ui/core/styles'
 
 export const useStyles = makeStyles({
     img: {
-        borderRadius: '20px',
         width: '100%',
         height: '100%',
         
@@ -10,11 +9,10 @@ export const useStyles = makeStyles({
     card: {
         borderRadius: '20px',
         color: 'white',
-        backgroundColor: '#2A2D3A',
+        backgroundColor: '#2A2D3A;',
         margin: '7px',
         padding: '15px',
-        maxWidth: '250px',
-        width: '100%'
+        maxWidth: '250px'
     },
     heading: {
         fontFamily: 'Poppins, sans-serif',
