@@ -1,0 +1,120 @@
+.nav {
+    padding: 20px 20px;
+    font-family: poppins;
+}
+
+.nav * {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.nav_content {
+    color: #4F4F4F;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.nav_content,
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search {
+    width: 40vw;
+    font-size: 12px;
+    background: #1B1A21;
+    color: white;
+    border-radius: 10px;
+    padding: 7px;
+    border: none;
+}
+
+.search::placeholder {
+    color: white;
+}
+
+.searchbar {
+    width: 40vw;
+}
+
+.createBtn {
+    border-radius: 10px;
+    padding: 9px 30px 9px 30px;
+    background: linear-gradient(101.12deg, #EB1484 27.35%, #C91CC3 99.99%, #C81CC5 100%, #C81CC5 100%);
+    outline: none;
+    border: none;
+    color: white;
+    size: 14px;
+}
+
+.connectBtn {
+    color: #DA18A3;
+    border: 2px solid #DA18A3;
+    padding: 9px 30px 9px 30px;
+    border-radius: 10px;
+    size: 14px;
+    outline: none;
+    background-color: #24252D;
+}
+
+.createBtnMob {
+    border-radius: 10px;
+    padding: 9px 30px 9px 30px;
+    background: linear-gradient(101.12deg, #EB1484 27.35%, #C91CC3 99.99%, #C81CC5 100%, #C81CC5 100%);
+    outline: none;
+    border: none;
+    color: white;
+    size: 14px;
+}
+
+.connectBtnMob {
+    color: #DA18A3;
+    border: 2px solid #DA18A3;
+    padding: 9px 30px 9px 30px;
+    border-radius: 10px;
+    size: 14px;
+    outline: none;
+    background-color: #24252D;
+}
+
+.menuBtn {
+    display: none;
+}
+
+.darklogo {
+    display: none;
+}
+
+.divider {
+    background: #2D2E36
+}
+
+@media screen and (max-width: 700px) {
+    .menuBtn {
+        display: inline;
+    }
+    .nav_content,
+    .createBtn,
+    .connectBtn {
+        display: none;
+    }
+    .nav * {
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+    .logo {
+        display: none;
+    }
+    .darklogo {
+        display: inline;
+    }
+    .nav {
+        padding: 5px 5px;
+        justify-content: space-between;
+    }
+    .searchbar {
+        width: 100%;
+    }
+}
