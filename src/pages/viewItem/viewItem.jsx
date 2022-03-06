@@ -28,7 +28,7 @@ export const ViewItem = () => {
   );
 
   return (
-    <Container className={styles.itemContain}>
+    <Container className={styles.itemContain} style={{display: 'flex'}}>
       {paymentDialog}
       {confirmDialog}
       <div className={styles.itemImgContainer}>

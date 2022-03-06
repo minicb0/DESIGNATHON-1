@@ -49,6 +49,12 @@
     size: 14px;
 }
 
+.createBtn:hover {
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background: linear-gradient(101.12deg, #CB1CC5 27.35%, #C81CC5 99.99%, #EB1484 100%, #C91CC3 100%);
+}
+
 .connectBtn {
     color: #DA18A3;
     border: 2px solid #DA18A3;
@@ -90,6 +96,15 @@
 .divider {
     background: #2D2E36
 }
+.darklogo:hover {
+    cursor: pointer;
+}
+
+
+.listItem:hover {
+    color: white;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 700px) {
     .menuBtn {
@@ -109,6 +124,12 @@
     }
     .darklogo {
         display: inline;
+    }
+    .logo:hover {
+       cursor: pointer;
+    }
+    .darklogo:hover {
+        cursor: pointer;
     }
     .nav {
         padding: 5px 5px;

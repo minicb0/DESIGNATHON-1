@@ -6,8 +6,9 @@ import Search from '../../assets/Logos/Search-dark.svg'
 import Menu from '../../assets/Logos/menu-dark.svg'
 import ExitDark from '../../assets/Logos/exit-dark.svg'
 import { Box, Divider, Drawer,InputAdornment,TextField,List, ListItem, ListItemText }from '@material-ui/core'
-    
+import { useNavigate } from "react-router-dom"
 export const Navbar = () => {
+  let navigate = useNavigate(); 
 const [state, setState] = React.useState({
       top: false,
       left: false,
@@ -38,16 +39,19 @@ const [state, setState] = React.useState({
         
 <List style={{color:'white'}}>
           {['Explore', 'My Items', 'Following'].map((text, index) => (
-            <ListItem button key={text}>
+            <ListItem button key={text} >
              
-              <ListItemText primary={text} />
+              <ListItemText 
+              className="listItem"
+                primary={text}
+              />
             </ListItem>
           ))}
         </List>
         <Box>
           <Divider style={{ background: '#2D2E36',marginTop:'100px' }}/>
           <div style={{display:'flex',justifyContent:'space-around',padding:'10px 10px'}}>
-              <button class={styles.createBtnMob}>Create</button>
+              <button class={styles.createBtnMob} onClick={() => {navigate("/create")}}>Create</button>
               <button class={styles.connectBtnMob}>Connect</button>
           </div>
         </Box>
@@ -60,8 +64,8 @@ const [state, setState] = React.useState({
     return (
       <>
         <div className={styles.nav}>
-          <img src={DarkLogo} alt="" className={styles.logo} />
-          <img src={MobileDarkLogo} alt="" className={styles.darklogo} />
+          <img src={DarkLogo} alt="" className={styles.logo} onClick={() => {navigate("/home")}} />
+          <img src={MobileDarkLogo} alt="" className={styles.darklogo} onClick={() => {navigate("/home")}} />
           <div className={styles.searchbar}>
           
             <TextField variant="outlined" className={styles.searchbar} size='small' placeholder="Search Item Here"
@@ -76,12 +80,12 @@ const [state, setState] = React.useState({
           </div>
       
           <div className={styles.nav_content}>
-            <div>Explore</div>
-            <div>My Items</div>
-            <div>Following</div>
+            <div className={styles.listItem} onClick={() => {navigate("/home")}}>Explore</div>
+            <div className={styles.listItem} onClick={() => {navigate("/item")}}>My Items</div>
+            <div className={styles.listItem} onClick={() => {navigate("/profile")}}>Following</div>
           </div>
       
-          <button class={styles.createBtn}>Create</button>
+          <button class={styles.createBtn} onClick={() => {navigate("/create")}}>Create</button>
           <button class={styles.connectBtn}>Connect</button>
           <img src={Menu} alt="" className={styles.menuBtn} onClick={toggleDrawer('top', true)} />
           <Drawer

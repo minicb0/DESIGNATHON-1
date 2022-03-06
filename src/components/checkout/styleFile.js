@@ -125,7 +125,11 @@ export const useStyles = makeStyles({
     borderRadius: '5px',
     background: 'linear-gradient(101.12deg, #EB1484 27.35%, #C91CC3 99.99%, #C81CC5 100%, #C81CC5 100%)',
     color: 'white !important',
-    padding: '3px 20px'
+    padding: '3px 20px',
+    '&:hover': {
+      cursor: 'pointer',
+      background: 'linear-gradient(101.12deg, #CB1CC5 27.35%, #C81CC5 99.99%, #EB1484 100%, #C91CC3 100%)'
+  }
   },
   cancel: {
     marginLeft: '20px',
