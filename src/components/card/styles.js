@@ -14,7 +14,11 @@ export const useStyles = makeStyles({
         margin: '7px',
         padding: '15px',
         maxWidth: '250px',
-        width: '100%'
+        width: '100%',
+        '&:hover': {
+            cursor: 'pointer',
+            backgroundColor: '#333540',
+        }
     },
     heading: {
         fontFamily: 'Poppins, sans-serif',

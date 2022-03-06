@@ -1,67 +1,73 @@
-            .itemContain {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                color: white;
-                font-family: poppins;
-            }
-            
-            .itemImgContainer {
-                width: 50%;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .itemImg {
-                position: relative;
-                width: 70%;
-                border-radius: 20px;
-            }
-            
-            .creatorContainer {
-                width: 50%;
-                border: 1px solid #2D2E36;
-                border-right: 0;
-                padding: 20px;
-            }
-            
-            .createBtn {
-                border-radius: 10px;
-                padding: 9px 30px 9px 30px;
-                background: linear-gradient(101.12deg, #EB1484 27.35%, #C91CC3 99.99%, #C81CC5 100%, #C81CC5 100%);
-                outline: none;
-                border: none;
-                color: white;
-                size: 14px;
-            }
-            
-            .connectBtn {
-                color: #DA18A3;
-                border: 2px solid #DA18A3;
-                padding: 9px 30px 9px 30px;
-                border-radius: 10px;
-                size: 14px;
-                outline: none;
-                background-color: #24252D;
-            }
-            
-            @media screen and (max-width:700px) {
-                .itemContain {
-                    flex-direction: column;
-                }
-                .creatorContainer {
-                    width: 100%;
-                }
-                .itemImgContainer {
-                    width: 100%;
-                }
-                .itemImg {
-                    width: 100%;
-                }
-                .itemContain {
-                    margin-top: 30px;
-                }
-            }
+.itemContain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  font-family: poppins;
+}
+
+.itemImgContainer {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemImg {
+  position: relative;
+  width: 70%;
+  border-radius: 20px;
+}
+
+.creatorContainer {
+  width: 50%;
+  border: 1px solid #2d2e36;
+  border-right: 0;
+  padding: 20px;
+}
+
+.createBtn {
+  border-radius: 10px;
+  padding: 9px 30px 9px 30px;
+  background: linear-gradient(
+    101.12deg,
+    #eb1484 27.35%,
+    #c91cc3 99.99%,
+    #c81cc5 100%,
+    #c81cc5 100%
+  );
+  outline: none;
+  border: none;
+  color: white;
+  size: 14px;
+}
+
+.connectBtn {
+  color: #da18a3;
+  border: 2px solid #da18a3;
+  padding: 9px 30px 9px 30px;
+  border-radius: 10px;
+  size: 14px;
+  outline: none;
+  background-color: #24252d;
+}
+
+@media screen and (max-width: 700px) {
+  .itemContain {
+    flex-direction: column;
+  }
+  .creatorContainer {
+    width: 100%;
+  }
+  .itemImgContainer {
+    width: 100%;
+  }
+  .itemImg {
+    width: 100%;
+  }
+  .itemContain {
+    margin-top: 30px;
+  }
+}

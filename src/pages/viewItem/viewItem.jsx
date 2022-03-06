@@ -2,7 +2,7 @@ import { React, useState } from 'react'
 import { Avatar, Tabs, Tab, Box, Container } from '@material-ui/core'
 import creator from '../../assets/images/creatorProfile.svg'
 import styles from './style.module.css'
-import item from '../../assets/images/item.svg'
+// import item from '../../assets//item.svg'
 import heartDark from '../../assets/Logos/heartDark.svg'
 import { Checkout } from '../../components/checkout/Checkout'
 import { Payment } from '../../components/payment/Payment'
@@ -32,7 +32,7 @@ export const ViewItem = () => {
       {paymentDialog}
       {confirmDialog}
       <div className={styles.itemImgContainer}>
-<img src={item} alt="item"className={styles.itemImg} />
+<img src="assets/hotBirds/image_1.png" alt="item"className={styles.itemImg} />
       </div>
       
       <div className={styles.creatorContainer}>

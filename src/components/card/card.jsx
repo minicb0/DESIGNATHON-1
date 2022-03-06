@@ -1,11 +1,12 @@
 import React from 'react'
 
 import { useStyles } from './styles'
-import { Grid } from '@material-ui/core'
+import { Grid, Link } from '@material-ui/core'
+import { useNavigate } from "react-router-dom";
 
 export const Card = (props) => {
     const classes = useStyles()
-
+    let navigate = useNavigate(); 
     return (
         <Grid
             item
@@ -15,6 +16,7 @@ export const Card = (props) => {
             md={4}
             lg={3}
             className={classes.card}
+            onClick={() => navigate("/item")}
         >
             <img src={props.image} alt="card"className={classes.img} />
             <div className={classes.heading}>{props.heading}</div>

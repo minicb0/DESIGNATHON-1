@@ -16,7 +16,11 @@ export const useStyles = makeStyles({
         display: 'flex',
         flexDirection: 'column',
         // justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        '&:hover': {
+            cursor: 'pointer',
+            backgroundColor: '#333540',
+        }
     },
     heading: {
         fontFamily: 'Poppins, sans-serif',
