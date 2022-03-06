@@ -12,9 +12,9 @@ export const Payment = () => {
            </div>
            <p className={classes.share}>Share</p>
            <div className={classes.icons}>
-           <img className={classes.iconsImg} src="insta1.png"></img>
-           <img className={classes.iconsImg} src="twitt.png"></img>
-           <img className={classes.iconsImg} src="tele1.png"></img>
+           <img className={classes.iconsImg} alt="image"src="insta1.png"></img>
+           <img className={classes.iconsImg} alt="image"src="twitt.png"></img>
+           <img className={classes.iconsImg} alt="image"src="tele1.png"></img>
              </div>
     </div>
   )

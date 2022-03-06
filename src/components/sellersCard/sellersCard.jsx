@@ -16,9 +16,9 @@ export const SellersCard = (props) => {
             className={classes.card}
         >
             <div className={classes.avatarWrap}>
-                <img src={props.image} className={classes.avatar} /> 
+                <img src={props.image} alt="card"className={classes.avatar} /> 
                 <span className={classes.tick}>
-                    <img src={"assets/tick.svg"} />
+                    <img src={"assets/tick.svg"}alt="card" />
                 </span>
             </div>
             {/* <img src={props.image} className={classes.img} /> */}

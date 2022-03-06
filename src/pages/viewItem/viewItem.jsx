@@ -1,5 +1,5 @@
 import React from 'react'
-import { Avatar, Chip, Tabs, Tab, Box, Container } from '@material-ui/core'
+import { Avatar, Tabs, Tab, Box, Container } from '@material-ui/core'
 import creator from '../../assets/images/creatorProfile.svg'
 import styles from './style.module.css'
 import item from '../../assets/images/item.svg'
