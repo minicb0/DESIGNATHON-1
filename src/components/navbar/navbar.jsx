@@ -5,7 +5,7 @@ import styles from './navbar.module.css';
 import Search from '../../assets/Logos/Search-dark.svg'
 import Menu from '../../assets/Logos/menu-dark.svg'
 import ExitDark from '../../assets/Logos/exit-dark.svg'
-import { Box, Divider, Drawer, Button,InputAdornment,TextField,List, ListItem, ListItemIcon, ListItemText }from '@material-ui/core'
+import { Box, Divider, Drawer,InputAdornment,TextField,List, ListItem, ListItemText }from '@material-ui/core'
     
 export const Navbar = () => {
 const [state, setState] = React.useState({

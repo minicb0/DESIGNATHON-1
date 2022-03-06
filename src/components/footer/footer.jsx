@@ -4,7 +4,7 @@ import telegram from '../../assets/Logos/Group 14.svg';
 import discord from '../../assets/Logos/Group 15.svg';
 import instagram from '../../assets/Logos/Group 16.svg';
 import Logo from '../../assets/Logos/dark.svg'
-import { Box, Container,TextField,Divider, Input } from '@material-ui/core'
+import { Box,Divider } from '@material-ui/core'
 // import Link from '@mui/material/Link';
 import styles from './footer.module.css';
 export const Footer = () => {
